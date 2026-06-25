@@ -1,0 +1,18 @@
+{
+  "train_images": 705,
+  "val_images": 50,
+  "train_teeth": 3529,
+  "val_teeth": 182,
+  "train_pathology_counts": {
+    "impacted": 604,
+    "caries": 2189,
+    "periapical": 158,
+    "deep_caries": 578
+  },
+  "val_pathology_counts": {
+    "impacted": 40,
+    "caries": 101,
+    "periapical": 9,
+    "deep_caries": 32
+  }
+}

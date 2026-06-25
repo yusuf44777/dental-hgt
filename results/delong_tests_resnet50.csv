@@ -1,0 +1,5 @@
+Pathology,AUC Indep.CNN,AUC HomogeneousGNN,AUC DentalHGT,p (HGT vs CNN),sig (HGT vs CNN),p (HGT vs GNN),sig (HGT vs GNN)
+Caries,0.787,0.757,0.830,0.3427,n.s.,0.1183,n.s.
+Deep Caries,0.664,0.647,0.652,0.8776,n.s.,0.9542,n.s.
+Periapical,0.733,0.710,0.772,0.7716,n.s.,0.6475,n.s.
+Impacted,0.954,0.956,0.971,0.5640,n.s.,0.6072,n.s.

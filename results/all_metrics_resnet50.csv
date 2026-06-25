@@ -1,0 +1,16 @@
+model,pathology,auroc,ap,f1,sensitivity,specificity,n_pos,n_neg
+IndependentCNN,caries,0.7872,0.7861,0.7982,0.901,0.5556,101,81
+IndependentCNN,deep_caries,0.6642,0.2762,0.3846,0.625,0.6533,32,150
+IndependentCNN,periapical,0.7328,0.1003,0.1579,0.3333,0.8497,9,173
+IndependentCNN,impacted,0.9537,0.803,0.809,0.9,0.9085,40,142
+IndependentCNN,MEAN,0.7845,0.4914,,,,182,546
+HomogeneousGNN,caries,0.7575,0.7686,0.7598,0.8614,0.4938,101,81
+HomogeneousGNN,deep_caries,0.6473,0.2548,0.3846,0.625,0.6533,32,150
+HomogeneousGNN,periapical,0.7097,0.0961,0.0,0.0,0.9595,9,173
+HomogeneousGNN,impacted,0.9558,0.8101,0.8182,0.9,0.9155,40,142
+HomogeneousGNN,MEAN,0.7676,0.4824,,,,182,546
+DentalHGT,caries,0.8296,0.8494,0.7539,0.7129,0.7778,101,81
+DentalHGT,deep_caries,0.6519,0.2618,0.3729,0.6875,0.5733,32,150
+DentalHGT,periapical,0.772,0.1747,0.2857,0.3333,0.948,9,173
+DentalHGT,impacted,0.9711,0.9128,0.8095,0.85,0.9296,40,142
+DentalHGT,MEAN,0.8062,0.5497,,,,182,546

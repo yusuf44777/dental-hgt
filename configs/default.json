@@ -1,0 +1,54 @@
+{
+  "seed": 42,
+  "paths": {
+    "dataset_dir": "dataset/dentex",
+    "results_dir": "results",
+    "figures_dir": "figures"
+  },
+  "dataset": {
+    "train_json":      "dataset/dentex/DENTEX/training_data/quadrant-enumeration-disease/train_quadrant_enumeration_disease.json",
+    "val_json":        "dataset/dentex/DENTEX/validation_triple.json",
+    "train_image_dir": "dataset/dentex/DENTEX/training_data/quadrant-enumeration-disease/xrays",
+    "val_image_dir":   "dataset/dentex/DENTEX/validation_data/quadrant_enumeration_disease/xrays",
+    "pathologies": ["caries", "deep_caries", "periapical", "impacted"]
+  },
+  "preprocess": {
+    "roi_size": 64,
+    "clahe_clip_limit": 2.0,
+    "clahe_grid": [8, 8],
+    "augmentation": true,
+    "aug_hflip_prob": 0.0,
+    "aug_brightness_factor": 0.2,
+    "aug_contrast_factor": 0.2
+  },
+  "backbone": {
+    "name": "resnet50",
+    "feature_dim": 128,
+    "freeze_up_to_layer": "layer3",
+    "dinov2_model": "dinov2_vits14"
+  },
+  "graph": {
+    "quadrant_dim": 32,
+    "arch_dim": 16
+  },
+  "hgt": {
+    "hidden_dim": 128,
+    "heads": 4,
+    "layers": 2,
+    "dropout": 0.2
+  },
+  "training": {
+    "epochs": 100,
+    "lr": 0.001,
+    "weight_decay": 1e-4,
+    "batch_size": 16,
+    "patience": 15,
+    "scheduler": "cosine"
+  },
+  "baselines": {
+    "run_independent_cnn": true,
+    "run_homogeneous_gnn": true,
+    "run_yolo": false,
+    "yolo_model": "yolov8n.pt"
+  }
+}

@@ -1,0 +1,43 @@
+# Local datasets and downloaded archives
+dataset/
+*.zip
+
+# Model checkpoints and generated feature tensors
+results/*.pt
+results/*.pth
+results/*.ckpt
+results/*.onnx
+results/*.npy
+results/*.npz
+
+# Python caches and build outputs
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Unpublished manuscript files stay local until release/publication.
+paper/
+
+# LaTeX auxiliary files
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+
+# Local/editor state and secrets
+.DS_Store
+.claude/
+.agents/
+.codex/
+.env
+.env.*
+.ipynb_checkpoints/
